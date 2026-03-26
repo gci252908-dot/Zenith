@@ -24,6 +24,13 @@
             "options": {
                 "Slap the king": "nightring_jail"
             }
+        },
+        {
+            "id": "D",
+            "desc": "you low-key dumb",
+            "options": {
+                "Slap the king": "nightring_jail"
+            }  
         }
     ]
 }

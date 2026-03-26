@@ -1,0 +1,17 @@
+{
+    "display": "Goblin",
+    "id": "goblin",
+    "health": 5,
+    "weapons": ["wooden_stick"],
+    "strength": 1,
+    "statements": [
+        "Gaggaagagaga!",
+        "Goigoigoi...",
+        "Hababababa!",
+        "hoiiiiiyuhu",
+        "hoobadoobadoobdoob.. >:)",
+        "abababababababagoogoo!!!",
+        "HEEHEEEHAARRRR",
+        "heehaaa"
+    ]
+}

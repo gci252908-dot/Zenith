@@ -11,10 +11,12 @@ class Zenith:
         engine.get_input(LOGO_ART + "\n\nPress enter to play...") # Hacky but works :)
 
     def update(self, _delta):
+        self.game.reset_frame()
         self.game.update(self.engine,_delta)
 
     def draw(self, delta):
-        pass        
+        """ Draw the game's frame. """
+        self.engine.draw(self.game.frame)
         #self.engine.quit()
 
     def end(self):

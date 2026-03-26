@@ -3,6 +3,7 @@
     "id": "goblin",
     "health": 5,
     "weapons": ["wooden_stick"],
+    "currency": [0,20],
     "strength": 1,
     "statements": [
         "Gaggaagagaga!",

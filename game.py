@@ -53,8 +53,8 @@ class Game:
         match self.gamestate:
             case GAME_STATE.INITIAL_SETUP:
                 name = choice_loop(terminal,True,"Enter your name young peasant: ","Peasant, you must choose a name!")
-                self.player.name = name
+                self.player.set_name(name)
                 terminal.harsh_flush()
                 self.change_state(GAME_STATE.PLAYING)
             case GAME_STATE.PLAYING:
-                self.add_to_frame("/cRANDPoop fart!")
+                self.add_to_frame(str(self.player))

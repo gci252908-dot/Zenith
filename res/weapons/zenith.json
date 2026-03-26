@@ -1,0 +1,9 @@
+{
+    "display": "Zenith",
+    "description": "It's a God-like weapon made in the ashed mountain range of Heavenrend, used by The Apex of Creation: The first born son of Ranarch, The Forgotten Child...",
+    "durability": 1500,
+    "value": -1,
+    "damage": 300,
+    "id": "zenith",
+    "types": ["melee","ranged"]
+}

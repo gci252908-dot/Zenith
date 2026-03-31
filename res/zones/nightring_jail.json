@@ -40,14 +40,14 @@
         },
         {
             "id": "E",
-            "desc": "With so much overcrowding; infighting began shortly after you drew the first blow.\nThe guards had to open the cage; and now's your chance!"
+            "desc": "With so much overcrowding; infighting began shortly after you drew the first blow.\nThe guards had to open the cage; and now's your chance!",
             "options": {
               "Book it towards the exit": "F"
             }
         },
         {
             "id": "F",
-            "desc": "You slipped out undetected, and there's little chance they'll recognize you with how many peasants are around."
+            "desc": "You slipped out undetected, and there's little chance they'll recognize you with how many peasants are around.",
             "options": {
               "Turn yourself back in": "death",
               "Exit to town square": "nightring_town_square"

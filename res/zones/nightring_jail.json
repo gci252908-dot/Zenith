@@ -14,38 +14,23 @@
             "id": "B",
             "desc": "while waiting you look around and find many bones scaddered around, seems that waiting isn't good, unless your on a diet plan to get skinny like that skeleton", 
             "options": { 
-                "Wait for your trail": "B", 
+                "Wait for your trail": "Z", 
                 "Try to exit the dungeon": "C" }
         },
 
         {
-            "id": "c",
+            "id": "C",
             "desc": "You found a hole to crawl through", 
             "options": { 
-                "crawl through": "D", 
+                "crawl through": "sewers", 
                 "chicken out because you don't know what made this hole and it could be a giant rat": "B" }
         },
 
         {
-            "id": "D",
-            "desc": "You crawl throught the hole and now you are in the sewears now you have a dicision Left or Right", 
+            "id": "Z",
+            "desc": "you wait thinking that youll get a fair trail.... your trail comes and.... your demend guilty of Treason and beheaded", 
             "options": { 
-                "Left": "E",
-                "Right": "F" }
-        },
-
-        {
-            "id": "E",
-            "desc": "You go left and adventure far down through the dark sewears; you hit a dead end by a brick wall, but you hear the city through the wall", 
-            "options": { 
-                "Turn back": "F" }
-        },
-
-        {
-            "id": "E",
-            "desc": "You go right and adventure far down through the dark sewears with many twists and turns but you see the light outside", 
-            "options": { 
-                "continue": "nightring_city" }
+                "Death": "" }
         }
 
     ]

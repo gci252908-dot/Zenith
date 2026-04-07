@@ -1,0 +1,30 @@
+{
+    "display": "Sewers",
+    "id": "sewers",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "you’re in the sewers it smells like poo, look for an exit", 
+            "options": { 
+                "Go back to the cell": "nightring_jail", 
+                "Left":"B",
+                "Right":"C" }
+        },
+
+        {
+            "id": "B",
+            "desc": "It's dark an cold you can barely see in front of you, it's dead quiet", 
+            "options": { 
+                "Continue":"outer_walls"}
+        },
+
+        {
+            "id": "C",
+            "desc": "It's dark an cold you can barely see in front of you, it is loud, seems you're under the city ", 
+            "options": {  
+                "Continue":"nightring_city" }
+        }
+
+
+    ]
+}

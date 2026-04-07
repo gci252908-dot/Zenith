@@ -1,0 +1,15 @@
+{
+    "display": "Outer Walls",
+    "id": "outer_walls",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "you’re outside The city of Nightring and close to a dark, dense forest but on your left there is a entrance to the sewers ", 
+            "options": { 
+                "Go to the Forest": "", 
+                "Go to the Sewers": "sewers",
+                "Go to Nightring city": "nightring_city" }
+        }
+       
+    ]
+}

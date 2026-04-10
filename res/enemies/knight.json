@@ -1,0 +1,18 @@
+{
+    "display": "Knight",
+    "id": "knight",
+    "health": 50,
+    "weapons": ["greatsword"],
+    "currency": [0,20],
+    "strength": 20,
+    "statements": [
+        "Gaggaagagaga!",
+        "Goigoigoi...",
+        "Hababababa!",
+        "hoiiiiiyuhu",
+        "hoobadoobadoobdoob.. >:)",
+        "abababababababagoogoo!!!",
+        "HEEHEEEHAARRRR",
+        "heehaaa"
+    ]
+}

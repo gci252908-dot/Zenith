@@ -1,0 +1,9 @@
+{
+    "display": "Rusted Dagger",
+    "description": "It's not as bad as the stick its just slightly better.",
+    "durability": 25,
+    "value": 1,
+    "damage": 2,
+    "id": "rusted_dagger",
+    "types": ["melee"]
+}

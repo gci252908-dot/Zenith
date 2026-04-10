@@ -1,0 +1,9 @@
+{
+    "display": "Dagger",
+    "description": "It's not as bad as the stick its just slightly better.",
+    "durability": 50,
+    "value": 8,
+    "damage": 4,
+    "id": "dagger",
+    "types": ["melee"]
+}

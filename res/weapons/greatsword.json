@@ -1,0 +1,9 @@
+{
+    "display": "Greatsword",
+    "description": "It's not as bad as the stick its just slightly better.",
+    "durability": 60,
+    "value": 10,
+    "damage": 5,
+    "id": "greatsword",
+    "types": ["melee"]
+}

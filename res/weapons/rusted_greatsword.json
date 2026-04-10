@@ -1,0 +1,9 @@
+{
+    "display": "Rusted Greatsword",
+    "description": "It's not as bad as the stick its just slightly better.",
+    "durability": 30,
+    "value": 2,
+    "damage": 3,
+    "id": "rusted_greatsword",
+    "types": ["melee"]
+}

@@ -1,0 +1,18 @@
+{
+    "display": "Gaint Goblin",
+    "id": "Gaint_goblin",
+    "health": 20,
+    "weapons": [""],
+    "currency": [50],
+    "strength": 5,
+    "statements": [
+        "Gaggaagagaga!",
+        "Goigoigoi...",
+        "Hababababa!",
+        "hoiiiiiyuhu",
+        "hoobadoobadoobdoob.. >:)",
+        "abababababababagoogoo!!!",
+        "HEEHEEEHAARRRR",
+        "heehaaa"
+    ]
+}

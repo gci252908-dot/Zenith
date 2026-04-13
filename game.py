@@ -54,7 +54,7 @@ class Game:
     def parse_option(self,key):
         option = self.area.which_option(key)
         if option:
-            self.area = self.area.get_next(key)
+            self.area = self.area.get_next(option,zone_catalog)
 
 
     def update(self, terminal: PyTerminal, _delta: float) -> None:

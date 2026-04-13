@@ -1,6 +1,9 @@
+from letter_options import get_next_letter,reset
+
 class Option:
-    def __init__(self,text,letter):
+    def __init__(self,text,id,letter):
         self.text = text
+        self.next_id = id
         self.letter = letter
     
     def __str__(self):
@@ -15,9 +18,10 @@ class Area:
         self.zone = zone
 
         self.options = [
-            Option(text, letter)
-            for text, letter in dat.get("options", {}).items()
+            Option(text, id,get_next_letter())
+            for text, id in dat.get("options", {}).items()
         ]
+        reset()
 
     def which_option(self,key):
         for option in self.options:
@@ -31,11 +35,13 @@ class Area:
 {"\n".join(str(option) for option in self.options)}
         """.strip()
 
-    def get_next(self,letter):
+    def get_next(self,option,catalog):
+        last_id = None
         for id,area in self.zone.areas.items():
-            if area.id.lower() == letter.lower():
+            if id.lower() == option.next_id.lower():
                 return area
-        return None
+            last_id = option.next_id
+        return catalog.zones[last_id.lower()].areas["entry"]
 
 class Zone:
     def __init__(self,dat):

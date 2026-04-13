@@ -23,7 +23,7 @@ class ZoneCatalog:
         self.zones = {}
         for entry in os.scandir("./res/zones"):
             zone = parse(get_resource(f"zones/{entry.name}"))
-            self.zones[zone.id] = zone
+            self.zones[zone.id.lower()] = zone
 
 weapon_catalog = WeaponCatalog()
 zone_catalog = ZoneCatalog()

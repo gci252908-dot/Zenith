@@ -1,0 +1,36 @@
+{
+    "display": "Nightring City",
+    "id": "nightring_city",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "you’re in the bustling city of Nightring", 
+            "options": { 
+                "Go to the market": "B",
+                "Leave the city": "outer_walls",  
+                "Go to the castle": "castle_nightring",
+                "Go to the tavern": "Tavern"
+                 }
+        },
+       
+        {
+            "id": "B",
+            "desc": "You're in the main market", 
+            "options": { 
+                "Go to the Armorer": "C",
+                "Go to the Jeweler": "D",
+                "Go to the Herbalist": "E",
+                "Try to find the mysterious Blackmarket": "F",
+                "Go back to main city": "entry" 
+                 }
+        },
+
+                {
+            "id": "F",
+            "desc": " bro stop trying to be dark and mysterious, The Blackmarket isn't even real, like the tooth fairy and queen Elizabeth ", 
+            "options": { 
+                "go back": "B" 
+                 }
+        }
+    ]
+}

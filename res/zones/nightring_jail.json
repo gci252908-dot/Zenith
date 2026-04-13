@@ -1,71 +1,59 @@
 {
-    "display": "Nightring Penitentiary",
+    "display": "Nightring Jail",
     "id": "nightring_jail",
     "areas": [
         {
             "id": "entry",
-            "desc": "You are locked in a cramped cage, filled to the brim with peasants.\nThe smell is... unpleasant, and you want nothing more than to get out.\nIt seems any attempt to leave could result in more severe punishment...", 
+            "desc": "You are inside of Nightring jail.", 
             "options": { 
-                "Drop to a crawl": "B", 
-                "Sit and wallow in your misery": "entry",
-                "Start fighting the other peasants": "E",
-                "Unlock the cage door": "G"
-            }
+                "Wait for your trail": "B", 
+                "Try to exit the dungeon": "C" }
         },
+
         {
             "id": "B",
-            "condition": "not jail_key_held",
-            "desc": "You've dropped to a crawl. The other peasants are unbothered, and nobody saw.",
-            "options": {
-                "Crawl around, and look for... something.": "C",
-                "Stand back up": "entry"
-            }
+            "desc": "while waiting you look around and find many bones scaddered around, seems that waiting isn't good, unless your on a diet plan to get skinny like that skeleton", 
+            "options": { 
+                "Wait for your trail": "B", 
+                "Try to exit the dungeon": "C" }
         },
+
         {
-            "id": "C",
-            "desc": "What's this? A key?",
-            "options": {
-                "Pick up the key": "D",
-                "Leave it be and stand back up.": "entry"
-            }
+            "id": "c",
+            "desc": "You found a hole to crawl through", 
+            "options": { 
+                "crawl through": "D", 
+                "chicken out because you don't know what made this hole and it could be a giant rat": "B" }
         },
+
         {
             "id": "D",
-            "desc": "When you picked up the key, a peasant noticed!\nQuickly; what do you do?",
-            "options": {
-                "Start fighting the other peasants": "E",
-                "Drop the key, and stand back up.": "entry",
-                "Ignore him, and stand up": "entry"
-            }  
+            "desc": "You crawl throught the hole and now you are in the sewears now you have a dicision Left or Right", 
+            "options": { 
+                "Left": "E",
+                "Right": "F" }
         },
+
         {
             "id": "E",
-            "desc": "With so much overcrowding; infighting began shortly after you drew the first blow.\nThe guards had to open the cage; and now's your chance!",
-            "options": {
-              "Book it towards the exit": "F"
-            }
+            "desc": "You go left and adventure far down through the dark sewears; you hit a dead end by a brick wall, but you hear the city through the wall", 
+            "options": { 
+                "Turn back": "F" }
         },
+
         {
-            "id": "F",
-            "desc": "You slipped out undetected, and there's little chance they'll recognize you with how many peasants are around.",
-            "options": {
-              "Turn yourself back in": "death",
-              "Exit to town square": "nightring_town_square"
-            }
-        },
-        {
-            "id": "G",
-            "condition": "jail_key_held",
-            "desc": "You put the key into the hole... twisted... and the guards instantly started yelling.\nThey took your key, and now you're potentially going to be sentenced even harsher...",
-            "options": {
-              "Turn yourself back in": "death",
-              "Start fighting the other peasants": "E"
-            }
-        },
-        {
-            "id": "death",
-            "death": true,
-            "desc": "It's over. They sentenced you to death, and now there's nothing left for you to do.\nThe Zenith will remain in the Heavenrend mountains, and your legacy will soon be forgotten.\nGoodbye, lowly peasant."
+            "id": "E",
+            "desc": "You go right and adventure far down through the dark sewears with many twists and turns but you see the light outside", 
+            "options": { 
+                "continue": "nightring_city" }
         }
+
     ]
 }
+
+
+
+
+
+
+     

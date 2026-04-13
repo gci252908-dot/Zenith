@@ -1,33 +1,33 @@
 {
     "display": "Castle Nightring",
-    "id": "nightring",
+    "id": "castle_nightring",
     "areas": [
         {
             "id": "entry",
             "desc": "You are inside of the main castle hall.", 
             "options": { 
                 "Go to the throne room": "B", 
-                "Attempt to exit the castle": "C" }
+                "Exit the castle": "C" }
         },
         {
             "condition": "giant_goblin_beaten",
             "id": "B",
             "desc": "You're in the throne room. The king wants to speak with you.",
             "options": {
-                "Try to run away": "C",
+                "Exit the castle": "C",
                 "Speak to king": "D"
             }
         },
         {
             "id": "C",
-            "desc": "On your way to escape the castle, you get chased down!",
+            "desc": "you leave the castle, you feel something watching you",
             "options": {
-                "Slap the king": "nightring_jail"
+                "Continue": "nightring_city"
             }
         },
         {
             "id": "D",
-            "desc": "you low-key dumb",
+            "desc": "You should be grateful I even let you stand in my presence. If I were in a worse mood, my servents would be scrubbing you off floor instead of pretending to matter because i can see how usless you are, I can see everything, I AM THE KING.",
             "options": {
                 "Slap the king": "nightring_jail"
             }  

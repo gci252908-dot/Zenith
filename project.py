@@ -11,6 +11,7 @@ class Zenith:
         engine.get_input(LOGO_ART + "\n\nPress enter to play...") # Hacky but works :)
 
     def update(self, _delta):
+        """ Moves over to the next update of the game loop """
         self.game.reset_frame()
         self.game.update(self.engine,_delta)
 

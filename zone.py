@@ -1,6 +1,7 @@
 from letter_options import get_next_letter,reset
 
 class Option:
+    """ Represents an option the player can pick from a specific Area """
     def __init__(self,text,id,letter):
         self.text = text
         self.next_id = id
@@ -10,6 +11,7 @@ class Option:
         return f"{self.letter}: {self.text}"
 
 class Area:
+    """ Represents a subcategory of a Zone, with options and a description """
     def __init__(self, dat, zone):
         self.id = dat["id"]
         self.entry = (self.id == "entry")
@@ -24,6 +26,7 @@ class Area:
         reset()
 
     def which_option(self,key):
+        """ Returns which option in the current area the user has picked, or None if the user picked an invalid option """
         for option in self.options:
             if option.letter.lower() == key.lower():
                 return option
@@ -36,6 +39,7 @@ class Area:
         """.strip()
 
     def get_next(self,option,catalog):
+        """ Grabs the next area to go to, either from the current Zone or from the next Zone to move to """
         last_id = None
         for id,area in self.zone.areas.items():
             if id.lower() == option.next_id.lower():
@@ -50,6 +54,7 @@ class Zone:
         self.areas = {}
 
 def parse(data):
+    """ Parses Zones from the JSON-data input from the catalog """
     zone = Zone(data)
     zone.areas = {a["id"]: Area(a,zone) for a in data["areas"]}
     return zone

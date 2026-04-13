@@ -25,3 +25,4 @@ python project.py
 * Modular classes for the player, game, weapons, zones, etc.
 * A game loop based on `PyTerminal`, the terminal "game-engine"
 * JSON-based formatting in the `res/` folder to avoid unnecessary programming
+* Tests for ensuring implementations are correct

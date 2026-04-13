@@ -52,6 +52,7 @@ class Game:
         self.frame += text
 
     def parse_option(self,key):
+        """ Parses an option input from the keyboard to give the next zone """
         option = self.area.which_option(key)
         if option:
             self.area = self.area.get_next(option,zone_catalog)

@@ -12,10 +12,11 @@
 
         {
             "id": "B",
-            "desc": "while waiting you look around and find many bones scaddered around, seems that waiting isn't good, unless your on a diet plan to get skinny like that skeleton", 
+            "desc": "while waiting you look around and find many bones scaddered around, seems that waiting isn't good, like that skeleton", 
             "options": { 
                 "Wait for your trail": "Z", 
-                "Try to exit the dungeon": "C" }
+                "Try to exit the dungeon": "C",
+                "look what the skeletion wrote": "X"}
         },
 
         {
@@ -31,8 +32,15 @@
             "desc": "you wait thinking that youll get a fair trail.... your trail comes and.... your demend guilty of Treason and beheaded", 
             "options": { 
                 "Death": "" }
-        }
+        },
 
+        {
+            "id": "X",
+            "desc": "IT NEVER ENDS", 
+            "options": { 
+                "Wait for your trail": "Z", 
+                "Try to exit the dungeon": "C"}
+        }
     ]
 }
 

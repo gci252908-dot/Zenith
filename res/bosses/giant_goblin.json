@@ -1,10 +1,10 @@
 {
-    "display": "Gaint Goblin",
-    "id": "Gaint_goblin",
-    "health": 20,
-    "weapons": [""],
-    "currency": [50],
-    "strength": 5,
+    "display": "Giant Goblin",
+    "id": "giant_goblin",
+    "health": 30,
+    "weapons": ["rusted_greatsword"],
+    "currency": 50,
+    "strength": 20,
     "statements": [
         "Gaggaagagaga!",
         "Goigoigoi...",

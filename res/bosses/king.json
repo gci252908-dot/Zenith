@@ -1,0 +1,22 @@
+{
+    "display": "The False King",
+    "id": "king",
+    "health": 100,
+    "weapons": ["royal_greatblade"],
+    "currency": 250,
+    "strength": 25,
+    "statements": [
+        "Filth like you should never have entered my halls.",
+        "I should have your head mounted before the gates.",
+        "You are nothing—less than the dirt beneath my throne.",
+        "Your existence offends me.",
+        "Kneel, or I will break you where you stand.",
+        "I will enjoy watching you beg.",
+        "You think yourself worthy of facing me? Laughable.",
+        "I have executed better warriors before breakfast.",
+        "Your blood will stain these floors, and no one will remember your name.",
+        "You are a mistake that I will personally erase.",
+        "Look at you… weak, trembling, insignificant.",
+        "I will make an example of you."
+    ]
+}

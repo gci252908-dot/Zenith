@@ -2,7 +2,7 @@
     "display": "Goblin",
     "id": "goblin",
     "health": 5,
-    "weapons": ["wooden_stick"],
+    "weapons": ["rusted_dagger"],
     "currency": [0,20],
     "strength": 1,
     "statements": [

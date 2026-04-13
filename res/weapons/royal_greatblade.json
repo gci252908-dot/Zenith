@@ -1,0 +1,9 @@
+{
+    "display": "Royal Greatblade",
+    "description": "it is made from the finest platinum, it was past down generations from one royal to another",
+    "durability": 60,
+    "value": 500,
+    "damage": 30,
+    "id": "royal_greatblade",
+    "types": ["melee"]
+}

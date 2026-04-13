@@ -2,7 +2,7 @@
     "display": "Wooden Stick",
     "description": "It's a wooden stick. We all start somewhere...",
     "durability": 10,
-    "value": 0.3,
+    "value": 0,
     "damage": 1,
     "id": "wooden_stick",
     "types": ["melee"]

@@ -3,16 +3,16 @@
     "id": "knight",
     "health": 50,
     "weapons": ["greatsword"],
-    "currency": [0,20],
+    "currency": [0, 20],
     "strength": 20,
     "statements": [
-        "Gaggaagagaga!",
-        "Goigoigoi...",
-        "Hababababa!",
-        "hoiiiiiyuhu",
-        "hoobadoobadoobdoob.. >:)",
-        "abababababababagoogoo!!!",
-        "HEEHEEEHAARRRR",
-        "heehaaa"
+        "Stand down. You are not permitted here.",
+        "In the name of the crown, I will strike you down.",
+        "You will go no further.",
+        "I have sworn an oath. I will not falter.",
+        "Your life ends here.",
+        "For the king!.",
+        "I will cut you down where you stand.",
+        "You face a knight of the realm—prepare yourself."
     ]
 }

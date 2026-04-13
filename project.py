@@ -28,7 +28,5 @@ class Zenith:
     def run_game(self):
         """Start the game loop."""
         self.engine.run_loop(self.update, self.draw, fps=5)
-
-
 game = Zenith()
 game.run_game()

@@ -34,7 +34,7 @@ class Game:
         self.gamestate = GAME_STATE.INITIAL_SETUP
         self.player = Player()
         self.frame = ""
-        self.area = zone_catalog.zones["nightring"].areas["entry"]
+        self.area = zone_catalog.zones["castle_nightring"].areas["entry"]
 
     def change_state(self,gamestate) -> None:
         """ Swaps the state of the game. """

@@ -1,9 +1,8 @@
-from enum import Enum
-from assets import LOGO_ART
-from player import Player
 from pyterminal import PyTerminal
+from enum import Enum
+from src.entities.player import Player
 
-from catalogs import zone_catalog
+from src.resources.catalogs import zone_catalog
 
 class GAME_STATE(Enum):
     INITIAL_SETUP = 1

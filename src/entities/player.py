@@ -1,4 +1,4 @@
-from entity import Entity
+from src.entities.entity import Entity
 
 BASE_STATS = {
     "id": "player",

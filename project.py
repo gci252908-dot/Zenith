@@ -1,6 +1,6 @@
 from pyterminal import PyTerminal
-from assets import LOGO_ART
-from game import Game
+from src.resources.assets import LOGO_ART
+from src.world.game import Game
 
 class Zenith:
     def __init__(self):        

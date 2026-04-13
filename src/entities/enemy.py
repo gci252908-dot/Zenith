@@ -1,5 +1,5 @@
-from entity import Entity
 from random import randint
+from src.entities.entity import Entity
 
 class Enemy(Entity):
     def __init__(self,stats: dict):

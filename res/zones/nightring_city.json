@@ -4,7 +4,7 @@
     "areas": [
         {
             "id": "entry",
-            "desc": "you’re in the bustling city of Nightring", 
+            "desc": "You're in the bustling city of Nightring", 
             "options": { 
                 "Go to the market": "B",
                 "Leave the city": "outer_walls",  

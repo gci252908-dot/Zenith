@@ -1,0 +1,13 @@
+{
+    "display": "The End of The Road",
+    "id": "death",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "You've died a gruel and painful death...\nYour fellow peasants pity you. The Zenith went unclaimed...\n\n(Press CTRL+C to exit)", 
+            "options": { 
+                "Reincarnate...": "castle_nightring"
+                 }
+        }
+    ]
+}

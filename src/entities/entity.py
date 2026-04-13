@@ -1,4 +1,4 @@
-from catalogs import weapon_catalog
+from src.resources.catalogs import weapon_catalog
 
 BASE_HEALTH = 20
 BASE_STRENGTH = 1

@@ -1,5 +1,5 @@
-from weapon import Weapon
-from zone import parse
+from src.world.weapon import Weapon
+from src.world.zone import parse
 import os
 import json
 

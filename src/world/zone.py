@@ -1,4 +1,4 @@
-from letter_options import get_next_letter,reset
+from src.utils.letter_options import get_next_letter,reset
 
 class Option:
     """ Represents an option the player can pick from a specific Area """

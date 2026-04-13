@@ -3,6 +3,8 @@ from assets import LOGO_ART
 from player import Player
 from pyterminal import PyTerminal
 
+from catalogs import zone_catalog
+
 class GAME_STATE(Enum):
     INITIAL_SETUP = 1
     PLAYING = 2
@@ -32,6 +34,7 @@ class Game:
         self.gamestate = GAME_STATE.INITIAL_SETUP
         self.player = Player()
         self.frame = ""
+        self.area = zone_catalog.zones["nightring"].areas["entry"]
 
     def change_state(self,gamestate) -> None:
         """ Swaps the state of the game. """
@@ -48,6 +51,12 @@ class Game:
             raise ValueError("Attempt to add a non-string value to add_to_frame")
         self.frame += text
 
+    def parse_option(self,key):
+        option = self.area.which_option(key)
+        if option:
+            self.area = self.area.get_next(key)
+
+
     def update(self, terminal: PyTerminal, _delta: float) -> None:
         """ A state-machine based update loop for the game. Fires every tick. """
         match self.gamestate:
@@ -58,3 +67,8 @@ class Game:
                 self.change_state(GAME_STATE.PLAYING)
             case GAME_STATE.PLAYING:
                 self.add_to_frame(str(self.player))
+                self.add_to_frame(str(self.area))
+                terminal.non_blocking_input("What do you choose?: ")
+                if len(terminal.input_buffer) != 0:
+                    self.parse_option(terminal.input_buffer[0])
+                    terminal.cut_input()

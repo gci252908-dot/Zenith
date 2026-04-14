@@ -7,6 +7,7 @@ from src.resources.catalogs import zone_catalog
 class GAME_STATE(Enum):
     INITIAL_SETUP = 1
     PLAYING = 2
+    BATTLE = 3
 
 def choice_loop(terminal: PyTerminal, required: bool, prompt: str, empty: str):
     """ Repeatedly asks the user a prompt until they are satisfied with the answer. """
@@ -17,7 +18,7 @@ def choice_loop(terminal: PyTerminal, required: bool, prompt: str, empty: str):
         sure = terminal.get_input(f"You have selected {result}. Are you sure? ")
         if sure.lower().strip() in ["y", "yes","ye"]:
             decided = True
-        if result == "":
+        if result.strip() == "":
             print(empty)
             if required: decided = False
     return result
@@ -34,6 +35,7 @@ class Game:
         self.player = Player()
         self.frame = ""
         self.area = zone_catalog.zones["castle_nightring"].areas["entry"]
+        self.battle = None
 
     def change_state(self,gamestate) -> None:
         """ Swaps the state of the game. """
@@ -72,3 +74,13 @@ class Game:
                 if len(terminal.input_buffer) != 0:
                     self.parse_option(terminal.input_buffer[0])
                     terminal.cut_input()
+            case GAME_STATE.BATTLE:
+                if self.battle is None:
+                    self.change_state(GAME_STATE.PLAYING)
+                    return
+
+                self.battle.update(terminal)
+
+                if not self.battle.active:
+                    self.battle = None
+                    self.change_state(GAME_STATE.PLAYING)

@@ -1,0 +1,27 @@
+{
+    "display": "Dark Forest",
+    "id": "forest",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "You are inside of the Dark forest and lost.", 
+            "options": { 
+                "Go into the darkness": "A", 
+                "Go to the light": "B" }
+        },
+        {
+            "id": "B",
+            "desc": "SOMTHING IS CHASING YOU RUN FOR YOUR LIFE",
+            "options": {
+                "RUN AND SCREAM LIKE A LITTLE GIRL": "outer_walls"
+            }
+        },
+        {
+            "id": "A",
+            "desc": "while traveling you find a hint of a trail",
+            "options": {
+                "Follow it": "C"
+            }
+        }
+    ]
+}

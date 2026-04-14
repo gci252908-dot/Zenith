@@ -6,15 +6,16 @@
             "id": "entry",
             "desc": "You are inside of Nightring jail.", 
             "options": { 
-                "Wait for your trail": "B", 
-                "Try to exit the dungeon": "C" }
+                "Wait for your trial": "B", 
+                "Try to exit the dungeon": "C",
+                "Try to break your cell door":"nightring_main_jail" }
         },
 
         {
             "id": "B",
             "desc": "while waiting you look around and find many bones scaddered around, seems that waiting isn't good, like that skeleton", 
             "options": { 
-                "Wait for your trail": "Z", 
+                "Wait for your trial": "Z", 
                 "Try to exit the dungeon": "C",
                 "look what the skeletion wrote": "X"}
         },
@@ -29,7 +30,7 @@
 
         {
             "id": "Z",
-            "desc": "you wait thinking that youll get a fair trail.... your trail comes and.... your demend guilty of Treason and beheaded", 
+            "desc": "you wait thinking that youll get a fair trial.... your trial comes and.... your demend guilty of Treason and beheaded", 
             "options": { 
                 "Death": "death" }
         },
@@ -38,7 +39,7 @@
             "id": "X",
             "desc": "IT NEVER ENDS", 
             "options": { 
-                "Wait for your trail": "Z", 
+                "Wait for your trial": "Z", 
                 "Try to exit the dungeon": "C"}
         }
     ]

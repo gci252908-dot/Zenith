@@ -1,0 +1,35 @@
+{
+    "display": "Nightring Hall",
+    "id": "nightring_main_jail",
+    "areas": [
+        {
+            "id": "entry",
+            "desc": "You are outside of your cell.", 
+            "options": { 
+                "try to sneak out": "A", 
+                "Run to the Exit": "B",
+                "stand there look pretty": "entry" }
+        },
+        {
+           "id": "A",
+            "desc": "You make it to the exit... locked", 
+            "options": { 
+                "find the warden's key": "C", 
+                "go back to your cell": "nightring_jail",
+                "Try to break the door down": "B" }  
+        },
+        {
+           "id": "B",
+            "desc": "The warden catches you", 
+            "options": { 
+                "Fight Him": ["battle","knight"] }  
+        },
+        {
+           "id": "C",
+            "desc": "you make it into the warden's office... he is sleeping and the key is in his hands", 
+            "options": { 
+                "Take it": "B", 
+                "go back to your cell": "nightring_jail"}  
+        }
+    ]
+}

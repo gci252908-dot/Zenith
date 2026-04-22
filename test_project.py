@@ -1,6 +1,6 @@
-from letter_options import get_next_letter,reset
-from catalogs import zone_catalog
-from player import Player
+from src.utils.letter_options import get_next_letter,reset
+from src.resources.catalogs import zone_catalog
+from src.entities.player import Player
 
 def test_letters():
     assert(get_next_letter().lower() == "a")

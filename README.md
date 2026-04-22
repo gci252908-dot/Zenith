@@ -1,6 +1,7 @@
 # Zenith
 A text-based RPG where you attempt to claim the Zenith.
-
+## Video demo
+https://youtu.be/5kvSBM02Av0
 ## Usage
 
 * You must have `Python3.10 >=` to use this program.
